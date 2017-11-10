@@ -1,0 +1,17 @@
+{
+    "name": "zerifas/itunes",
+    "type": "library",
+    "license": "UNLICENSED",
+    "authors": [
+        {
+            "name": "Mat Gadd",
+            "email": "mat@zerifas.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Zerifas\\iTunes\\": "src/iTunes"
+        }
+    },
+    "require": {}
+}
