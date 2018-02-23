@@ -20,7 +20,8 @@ foreach ($library->getTracks() as $track) {
     $s = (string) $track;
 
     foreach ($terms as $term) {
-        if (stripos($s, $term) !== false) {
+        $re = preg_quote($term, '/');
+        if (preg_match("/\\b$re/i", $s)) {
             $tracks[] = $track;
             break; // Don't match the same track more than once
         }
